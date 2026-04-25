@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="site.title">Biel Vereda | Portfolio</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+
+  <canvas id="matrix"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home" data-i18n="navbar.home"></a></li>
+        <li><a href="#about" data-i18n="navbar.about"></a></li>
+        <li><a href="#projects" data-i18n="navbar.projects"></a></li>
+        <li><a href="#contact" data-i18n="navbar.contact"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <img src="./assets/images/gabrielVereda.jpg" alt="Biel Vereda" />
+    <h1 data-i18n="hero.title">Biel Vereda</h1>
+    <p data-i18n="hero.subtitle">Back-end and Front-end Developer</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2 data-i18n="about.title">About Me</h2>
+    <p data-i18n="about.text">This is the space where I share my journey and projects.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2 data-i18n="projects.title">Projects</h2>
+    <div class="project-list">
+      <!-- Project cards -->
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2 data-i18n="contact.title">Contact</h2>
+    <p data-i18n="contact.text">Choose your preferred contact method.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Biel Vereda</p>
+  </footer>
+
+  <!-- Settings Panel -->
+  <div class="settings-panel">
+    <h3 data-i18n="settings.title">Settings</h3>
+    <label for="langSwitcher" data-i18n="settings.language">Language:</label>
+    <select id="langSwitcher">
+      <option value="pt-br">Português (Brasil)</option>
+      <option value="pt-pt">Português (Portugal)</option>
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="zh">中文</option>
+    </select>
+
+    <label for="colorPicker" data-i18n="settings.color">Primary Color:</label>
+    <input type="color" id="colorPicker" />
+
+    <label for="fontSize" data-i18n="settings.font">Font Size:</label>
+    <input type="range" id="fontSize" min="12" max="24" />
+
+    <button id="toggleTheme" data-i18n="settings.theme">Toggle Dark/Light</button>
+  </div>
+
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/theme.js"></script>
+  <script src="./scripts/animations.js"></script>
+  <script src="./scripts/matrix.js"></script>
+</body>
+
+</html>

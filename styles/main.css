@@ -1,0 +1,211 @@
+:root {
+    --primary-color: #00ff9d;
+    /* cor inicial */
+    --secondary-color: #0d0d0d;
+    --font-size: 16px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    background: var(--secondary-color);
+    color: #eaeaea;
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    text-shadow: 0 0 8px var(--primary-color);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+}
+
+.hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Sections */
+section {
+    margin: 3rem auto;
+    max-width: 900px;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 6px var(--primary-color);
+}
+
+section p {
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* Projects */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #111;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #aaa;
+}
+
+/* Buttons */
+button,
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    box-shadow: 0 0 12px var(--primary-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+    border-top: 1px solid var(--primary-color);
+}
+
+/* Settings Panel */
+.settings-panel {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: #111;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 15px var(--primary-color);
+    z-index: 1000;
+}
+
+.settings-panel h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.settings-panel label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.settings-panel input,
+.settings-panel select,
+.settings-panel button {
+    margin-top: 0.3rem;
+    width: 100%;
+    background: #222;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 0.4rem;
+}
+
+.settings-panel button {
+    background: var(--primary-color);
+    color: #000;
+}
+
+.settings-panel button:hover {
+    box-shadow: 0 0 12px var(--primary-color);
+}
+
+#matrix {
+    position: fixed;
+    /* ocupa a tela toda */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0d0d0d;
+    z-index: -9999;
+    /* bem atrás de tudo */
+    pointer-events: none;
+    /* não bloqueia cliques nos elementos acima */
+}

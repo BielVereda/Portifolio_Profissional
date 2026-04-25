@@ -1,0 +1,20 @@
+{
+    "site.title": "Biel Vereda | Portafolio",
+    "navbar.home": "Inicio",
+    "navbar.about": "Sobre mí",
+    "navbar.projects": "Proyectos",
+    "navbar.contact": "Contacto",
+    "hero.title": "Biel Vereda",
+    "hero.subtitle": "Desarrollador Back-end y Front-end",
+    "about.title": "Sobre mí",
+    "about.text": "Este es el espacio donde comparto mi trayectoria y proyectos.",
+    "projects.title": "Proyectos",
+    "contact.title": "Contacto",
+    "contact.text": "Elige la forma de contacto que prefieras.",
+    "settings.title": "Configuraciones",
+    "settings.language": "Idioma:",
+    "settings.color": "Color primario:",
+    "settings.font": "Tamaño de fuente:",
+    "settings.theme": "Alternar Dark/Light",
+    "footer.about": "Sobre el proyecto"
+}
