@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -22,37 +22,85 @@
         <li><a href="#contact" data-i18n="navbar.contact"></a></li>
       </ul>
       <button id="configBtn" class="config-btn">
-        <img src="./assets/icons/setting.png" alt="Configurações" />
+        <img src="./assets/icons/settings.png" alt="Configurações" />
       </button>
     </nav>
   </header>
 
   <!-- Hero -->
   <section id="home" class="hero">
-    <img src="./assets/images/gabrielVereda.jpg" alt="Biel Vereda" />
+    <img src="./assets/images/profile.jpg" alt="Biel Vereda" />
     <h1 data-i18n="hero.title">Biel Vereda</h1>
     <p data-i18n="hero.subtitle">Back-end and Front-end Developer</p>
   </section>
 
   <!-- About -->
   <section id="about" class="about">
-    <h2 data-i18n="about.title">About Me</h2>
-    <p data-i18n="about.text">This is the space where I share my journey and projects.</p>
+    <h2 data-i18n="about.title">Sobre Mim</h2>
+
+    <p data-i18n="about.text1">
+      Fala aí, Sou o <strong>Biel Vereda</strong> — o cara que passa mais
+      tempo entre linhas de código do que longe da tela. Curioso por
+      natureza, sempre gostei de entender como as coisas funcionam, e foi
+      assim que acabei me apaixonando pela programação.
+    </p>
+
+    <p data-i18n="about.text2">
+      Hoje eu trabalho com <strong>Front-end</strong> e
+      <strong>Back-end</strong>, criando projetos que vão desde sites
+      simples até sistemas completos. Gosto de deixar tudo com uma pegada
+      moderna, fluida e com um toque pessoal.
+    </p>
+
+    <p data-i18n="about.text3">
+      No futuro, quero continuar evoluindo como
+      <strong>Full Stack</strong> e entrar em projetos grandes, onde eu
+      possa aprender ainda mais e mostrar que código bem feito também pode
+      ter estilo.
+    </p>
   </section>
 
   <!-- Projects -->
   <section id="projects" class="projects">
-    <h2 data-i18n="projects.title">Projects</h2>
+    <h2 data-i18n="projects.title">Projetos</h2>
     <div class="project-list">
       <!-- Project cards -->
     </div>
   </section>
 
   <!-- Contact -->
+  <!-- ===== CONTATO ===== -->
   <section id="contact" class="contact">
-    <h2 data-i18n="contact.title">Contact</h2>
-    <p data-i18n="contact.text">Choose your preferred contact method.</p>
+    <div class="container text-center">
+      <h2 data-i18n="contact.title">Entre em Contato</h2>
+      <p data-i18n="contact.text">
+        Ficarei feliz em conversar! Escolha a forma de contato que preferir:
+      </p>
+
+      <div class="contact-card">
+        <div class="contact-icon icon-email"></div>
+        <h5>Email</h5>
+        <a href="mailto:gabrielsantosvereda@gmail.com" class="btn">Enviar Email</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon icon-linkedin"></div>
+        <h5>Linkedin</h5>
+        <a href="https://www.linkedin.com/in/gabriel-vereda" target="_blank" rel="noopener noreferrer" class="btn">
+          Veja meu perfil
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon icon-github"></div>
+        <h5>GitHub</h5>
+        <a href="https://github.com/BielVereda" target="_blank" class="btn">Acessar GitHub</a>
+      </div>
+
+    </div>
+    </div>
   </section>
+
 
   <!-- Footer -->
   <footer>
@@ -77,8 +125,6 @@
 
     <label for="fontSize" data-i18n="settings.font">Font Size:</label>
     <input type="range" id="fontSize" min="12" max="24" />
-
-    <button id="toggleTheme" data-i18n="settings.theme">Toggle Dark/Light</button>
   </div>
 
   <script src="./scripts/main.js"></script>
