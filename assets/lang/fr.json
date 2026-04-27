@@ -6,15 +6,15 @@
     "navbar.contact": "Contact",
     "hero.title": "Biel Vereda",
     "hero.subtitle": "Développeur Back-end et Front-end",
-    "about.title": "À propos",
-    "about.text": "Ceci est l'espace où je partage mon parcours et mes projets.",
+    "about.title": "À propos de moi",
+    "about.text1": "Salut, je suis Biel Vereda — le gars qui passe plus de temps entre les lignes de code que loin de l'écran. Curieux de nature, j'ai toujours aimé comprendre comment les choses fonctionnent, et c'est ainsi que je suis tombé amoureux de la programmation.",
+    "about.text2": "Aujourd'hui je travaille en Front-end et Back-end, en créant des projets allant de simples sites web à des systèmes complets. J'aime donner à tout un style moderne, fluide et personnel.",
+    "about.text3": "À l'avenir, je veux continuer à évoluer comme développeur Full Stack et participer à de grands projets où je pourrai apprendre encore plus et montrer qu'un code bien écrit peut aussi avoir du style.",
     "projects.title": "Projets",
     "contact.title": "Contact",
-    "contact.text": "Choisissez la méthode de contact que vous préférez.",
+    "contact.text": "Choisissez votre méthode de contact préférée.",
     "settings.title": "Paramètres",
     "settings.language": "Langue:",
-    "settings.color": "Couleur principale:",
-    "settings.font": "Taille de police:",
-    "settings.theme": "Basculer Dark/Light",
-    "footer.about": "À propos du projet"
+    "settings.color": "Couleur primaire:",
+    "settings.font": "Taille de police:"
 }

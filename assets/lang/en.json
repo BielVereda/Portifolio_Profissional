@@ -1,20 +1,20 @@
 {
     "site.title": "Biel Vereda | Portfolio",
     "navbar.home": "Home",
-    "navbar.about": "About Me",
+    "navbar.about": "About",
     "navbar.projects": "Projects",
     "navbar.contact": "Contact",
     "hero.title": "Biel Vereda",
     "hero.subtitle": "Back-end and Front-end Developer",
     "about.title": "About Me",
-    "about.text": "This is the space where I share my journey and projects.",
+    "about.text1": "Hi, I'm Biel Vereda — the guy who spends more time between lines of code than away from the screen. Curious by nature, I've always liked to understand how things work, and that's how I fell in love with programming.",
+    "about.text2": "Today I work with Front-end and Back-end, creating projects that range from simple websites to complete systems. I like to give everything a modern, fluid touch with a personal style.",
+    "about.text3": "In the future, I want to keep growing as a Full Stack developer and join big projects where I can learn even more and show that well-written code can also have style.",
     "projects.title": "Projects",
     "contact.title": "Contact",
     "contact.text": "Choose your preferred contact method.",
     "settings.title": "Settings",
     "settings.language": "Language:",
     "settings.color": "Primary Color:",
-    "settings.font": "Font Size:",
-    "settings.theme": "Toggle Dark/Light",
-    "footer.about": "About the project"
+    "settings.font": "Font Size:"
 }

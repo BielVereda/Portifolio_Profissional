@@ -7,14 +7,14 @@
     "hero.title": "Biel Vereda",
     "hero.subtitle": "后端与前端开发者",
     "about.title": "关于我",
-    "about.text": "这是我分享我的经历和项目的空间。",
+    "about.text1": "你好，我是 Biel Vereda —— 一个花在代码上的时间比离开屏幕还多的人。天生好奇，我一直喜欢了解事物的运作方式，因此爱上了编程。",
+    "about.text2": "现在我从事前端和后端开发，项目范围从简单的网站到完整的系统。我喜欢让一切都具有现代、流畅并带有个人风格的感觉。",
+    "about.text3": "未来，我希望继续成长为全栈开发者，参与大型项目，在那里我能学到更多，并展示出精心编写的代码也可以很有风格。",
     "projects.title": "项目",
     "contact.title": "联系",
     "contact.text": "请选择您喜欢的联系方式。",
     "settings.title": "设置",
     "settings.language": "语言:",
     "settings.color": "主色:",
-    "settings.font": "字体大小:",
-    "settings.theme": "切换暗/亮模式",
-    "footer.about": "关于项目"
+    "settings.font": "字体大小:"
 }
