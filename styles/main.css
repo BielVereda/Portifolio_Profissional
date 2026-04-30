@@ -20,7 +20,7 @@ body {
     width: 100%;
     background: var(--secondary-color);
     border-bottom: 2px solid var(--primary-color);
-    padding: 1rem;
+    padding: 1em;
     z-index: 1000;
 }
 
@@ -44,14 +44,24 @@ body {
     color: var(--primary-color);
 }
 
+/* Ajuste específico para o botão de configuração */
 .config-btn {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
     background: none;
     border: none;
     cursor: pointer;
+    margin: 0.25rem;
+    margin-right: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.config-btn img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
 
 /* Hero */
 .hero {
@@ -127,6 +137,7 @@ body {
     color: var(--text-color);
     display: flex;
     justify-content: center;
+    right: -100px;
 }
 
 .contact h2 {
@@ -183,10 +194,10 @@ body {
 .about p,
 .projects p,
 .contact p {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.8);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
 }
 
 .icon-email {
@@ -251,20 +262,26 @@ footer {
 .settings-panel {
     position: fixed;
     top: 0;
-    right: -300px;
+    right: 0;
+    /* sempre ancorado no canto direito */
     width: 300px;
     height: 100%;
     background: var(--secondary-color);
     border-left: 2px solid var(--primary-color);
     padding: 2rem;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
-    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
     z-index: 2000;
+
+    /* escondido por padrão */
+    transform: translateX(100%);
 }
 
+/* quando ativo */
 .settings-panel.active {
-    right: 0;
+    transform: translateX(0);
 }
+
 
 .settings-panel h3 {
     color: var(--primary-color);
