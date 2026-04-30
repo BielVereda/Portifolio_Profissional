@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <canvas id="matrix"></canvas>
 
   <!-- Navbar -->
@@ -21,10 +20,11 @@
         <li><a href="#projects" data-i18n="navbar.projects"></a></li>
         <li><a href="#contact" data-i18n="navbar.contact"></a></li>
       </ul>
-      <button id="configBtn" class="config-btn">
-        <img src="./assets/icons/settings.png" alt="Configurações" />
-      </button>
     </nav>
+    
+    <button id="configBtn" class="config-btn">
+      <img src="./assets/icons/settings.png" alt="Settings" />
+    </button>
   </header>
 
   <!-- Hero -->
@@ -77,30 +77,31 @@
         Ficarei feliz em conversar! Escolha a forma de contato que preferir:
       </p>
 
-      <div class="contact-card">
-        <div class="contact-icon icon-email"></div>
-        <h5>Email</h5>
-        <a href="mailto:gabrielsantosvereda@gmail.com" class="btn">Enviar Email</a>
-      </div>
+      <div class="cards-group">
+        <div class="contact-card">
+          <div class="contact-icon icon-email"></div>
+          <h5>Email</h5>
+          <a href="mailto:gabrielsantosvereda@gmail.com" class="btn">Enviar Email</a>
+        </div>
 
-      <div class="contact-card">
-        <div class="contact-icon icon-linkedin"></div>
-        <h5>Linkedin</h5>
-        <a href="https://www.linkedin.com/in/gabriel-vereda" target="_blank" rel="noopener noreferrer" class="btn">
-          Veja meu perfil
-        </a>
-      </div>
+        <div class="contact-card">
+          <div class="contact-icon icon-linkedin"></div>
+          <h5>Linkedin</h5>
+          <a href="https://www.linkedin.com/in/gabriel-vereda" target="_blank" rel="noopener noreferrer" class="btn">
+            Veja meu perfil
+          </a>
+        </div>
 
-      <div class="contact-card">
-        <div class="contact-icon icon-github"></div>
-        <h5>GitHub</h5>
-        <a href="https://github.com/BielVereda" target="_blank" class="btn">Acessar GitHub</a>
+        <div class="contact-card">
+          <div class="contact-icon icon-github"></div>
+          <h5>GitHub</h5>
+          <a href="https://github.com/BielVereda" target="_blank" class="btn">Acessar GitHub</a>
+        </div>
       </div>
 
     </div>
     </div>
   </section>
-
 
   <!-- Footer -->
   <footer>
@@ -127,10 +128,11 @@
     <input type="range" id="fontSize" min="12" max="24" />
   </div>
 
-  <script src="./scripts/main.js"></script>
+  <script src="./scripts/menu.js"></script>
   <script src="./scripts/theme.js"></script>
   <script src="./scripts/animations.js"></script>
   <script src="./scripts/matrix.js"></script>
+  <script src="./scripts/tese.js"></script>
 </body>
 
 </html>

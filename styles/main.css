@@ -5,23 +5,70 @@
     --font-size: 16px;
 }
 
-body {
+* {
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: var(--font-size);
-    background: #000;
     color: var(--text-color);
+    border: none;
+    background: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #000;
 }
 
 /* Navbar */
 .navbar {
+    display: contents;
+}
+
+.navbar nav {
+    background: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--secondary-color);
-    border-bottom: 2px solid var(--primary-color);
-    padding: 1em;
-    z-index: 1000;
+    padding: 1.5em;
+    z-index: 2000;
+}
+
+/* Botão de Configuração */
+.config-btn {
+    position: fixed;
+    cursor: pointer;
+    color: var(--primary-color);
+    top: 15px;
+    right: 1%;
+    z-index: 3001;
+    transform: translateZ(100px)
+}
+
+.config-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    filter: blur(15px);
+    opacity: 0.5;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.config-btn:hover::before {
+    opacity: 1;
+}
+
+.config-btn img {
+    width: 40px;
+    height: 40px;
 }
 
 .nav-links {
@@ -44,28 +91,9 @@ body {
     color: var(--primary-color);
 }
 
-/* Ajuste específico para o botão de configuração */
-.config-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin: 0.25rem;
-    margin-right: 2.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.config-btn img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-
-
 /* Hero */
 .hero {
-    padding-top: 6rem;
+    margin-top: 10rem;
     text-align: center;
 }
 
@@ -190,10 +218,15 @@ body {
     mask-size: contain;
 }
 
+.cards-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+}
+
 /* Blocos pretos atrás dos textos */
-.about p,
-.projects p,
-.contact p {
+.about p, .projects p, .contact p {
     background: rgba(0, 0, 0, 0.8);
     padding: 1rem;
     border-radius: 8px;
@@ -263,17 +296,14 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    /* sempre ancorado no canto direito */
     width: 300px;
-    height: 100%;
+    height: 100vh;
     background: var(--secondary-color);
     border-left: 2px solid var(--primary-color);
     padding: 2rem;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
-    z-index: 2000;
-
-    /* escondido por padrão */
+    z-index: 3000;
     transform: translateX(100%);
 }
 
@@ -282,8 +312,8 @@ footer {
     transform: translateX(0);
 }
 
-
 .settings-panel h3 {
+    margin-top: 50px;
     color: var(--primary-color);
     margin-bottom: 1rem;
     text-shadow: 0 0 6px var(--primary-color);
@@ -296,32 +326,13 @@ footer {
     color: var(--text-color);
 }
 
-.settings-panel select,
-.settings-panel input[type="color"],
-.settings-panel input[type="range"] {
+.settings-panel select, .settings-panel input[type="color"], .settings-panel input[type="range"] {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid var(--primary-color);
     border-radius: 6px;
     background: #000;
     color: var(--text-color);
-}
-
-/* Botão de Configuração */
-.config-btn {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--primary-color);
-    font-size: 1.5rem;
 }
 
 /* Slider */
