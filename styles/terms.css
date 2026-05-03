@@ -1,0 +1,105 @@
+@import url("./main.css");
+
+/* Estilo da página de Termos de Uso */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.terms {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+    border: 2px solid var(--primary-color); /* mantém a cor principal */
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Títulos */
+.terms h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.terms h2 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+/* Parágrafos */
+.terms p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Links */
+.terms a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid var(--primary-color);
+    background: var(--secondary-color);
+    margin-top: 4rem;
+    color: var(--text-color);
+    opacity: 0.9;
+    position: relative;
+    /* dá contexto */
+    z-index: 10;
+    /* garante que o footer fique acima de outros elementos */
+}
+
+footer>p {
+    opacity: 1;
+    margin: 0;
+}
+
+footer .terms-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    /* mãozinha */
+    z-index: 20;
+    /* acima do ::after */
+}
+
+footer .terms-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    /* não bloqueia clique */
+}
+
+footer .terms-link:hover::after {
+    transform: scaleX(1);
+}
