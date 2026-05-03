@@ -1,22 +1,83 @@
 {
-    "site.title": "Biel Vereda | Portfólio",
-    "navbar.home": "Início",
-    "navbar.about": "Sobre Mim",
-    "navbar.projects": "Projetos",
-    "navbar.contact": "Contato",
-    "hero.title": "Biel Vereda",
-    "hero.subtitle": "Desenvolvedor Back-end e Front-end",
-    "about.title": "Sobre Mim",
-    "about.text1": "Fala aí, Sou o Biel Vereda — o cara que passa mais tempo entre linhas de código do que longe da tela. Curioso por natureza, sempre gostei de entender como as coisas funcionam, e foi assim que acabei me apaixonando pela programação.",
-    "about.text2": "Hoje eu trabalho com Front-end e Back-end, criando projetos que vão desde sites simples até sistemas completos. Gosto de deixar tudo com uma pegada moderna, fluida e com um toque pessoal.",
-    "about.text3": "No futuro, quero continuar evoluindo como Full Stack e entrar em projetos grandes, onde eu possa aprender ainda mais e mostrar que código bem feito também pode ter estilo.",
-    "projects.title": "Projetos",
-    "contact.title": "Contato",
-    "contact.text": "Escolha a forma de contacto que preferir.",
-    "settings.title": "Configurações",
-    "settings.language": "Idioma:",
-    "settings.color": "Cor primária:",
-    "settings.font": "Tamanho da fonte:",
-    "settings.theme": "Alternar Dark/Light",
-    "footer.about": "Sobre o projeto"
+    "site": {
+        "title": "Biel Vereda | Portfólio"
+    },
+    "navbar": {
+        "home": "Início",
+        "about": "Sobre Mim",
+        "projects": "Projetos",
+        "timeline": "Linha do Tempo",
+        "resume": "Currículo",
+        "contact": "Contato"
+    },
+    "hero": {
+        "title": "Biel Vereda",
+        "subtitle": "Desenvolvedor Back-end e Front-end"
+    },
+    "about": {
+        "title": "Sobre Mim",
+        "description1": "Sou Gabriel Vereda, desenvolvedor web apaixonado por criar soluções modernas e funcionais. Curioso por natureza, sempre busco entender como as coisas funcionam e transformar ideias em código bem estruturado.",
+        "description2": "Minha jornada começou com projetos pessoais e freelances, evoluindo para certificações e formação técnica em Desenvolvimento de Sistemas. Hoje, sigo focado em crescer como Full Stack e contribuir em projetos de impacto."
+    },
+    "projects": {
+        "title": "Projetos",
+        "filters": {
+            "all": "Todos",
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "fullstack": "Full Stack"
+        },
+        "cards": {
+            "repo": "Ver Repositório"
+        },
+        "controls": {
+            "prev": "‹",
+            "next": "›"
+        }
+    },
+    "timeline": {
+        "title": "Minha Jornada",
+        "steps": {
+            "2024": "Certificações SENAI e Alura",
+            "2025": "Projetos Freelance em HTML, CSS e JS",
+            "2026": "Técnico em Desenvolvimento de Sistemas"
+        }
+    },
+    "resume": {
+        "title": "Currículo",
+        "name": "Gabriel Vereda",
+        "role": "Desenvolvedor Web Júnior",
+        "description": "Experiência prática em desenvolvimento e manutenção de sites, com foco em soluções funcionais, responsivas e bem estruturadas. Buscando primeira oportunidade formal no mercado.",
+        "download": "Baixar Currículo",
+        "formats": {
+            "pdf": "PDF",
+            "jpg": "JPG",
+            "png": "PNG"
+        }
+    },
+    "contact": {
+        "title": "Entre em Contato",
+        "text": "Ficarei feliz em conversar! Escolha a forma de contato que preferir:",
+        "email": {
+            "title": "E-mail",
+            "button": "Enviar E-mail"
+        },
+        "linkedin": {
+            "title": "LinkedIn",
+            "button": "Veja meu perfil"
+        },
+        "github": {
+            "title": "GitHub",
+            "button": "Acessar GitHub"
+        }
+    },
+    "settings": {
+        "title": "Configurações",
+        "language": "Idioma",
+        "color": "Cor Primária",
+        "font": "Tamanho da Fonte"
+    },
+    "footer": {
+        "rights": "© 2026 Biel Vereda | Termos de Uso"
+    }
 }

@@ -1,20 +1,83 @@
 {
-    "site.title": "Biel Vereda | Portfolio",
-    "navbar.home": "Accueil",
-    "navbar.about": "À propos",
-    "navbar.projects": "Projets",
-    "navbar.contact": "Contact",
-    "hero.title": "Biel Vereda",
-    "hero.subtitle": "Développeur Back-end et Front-end",
-    "about.title": "À propos de moi",
-    "about.text1": "Salut, je suis Biel Vereda — le gars qui passe plus de temps entre les lignes de code que loin de l'écran. Curieux de nature, j'ai toujours aimé comprendre comment les choses fonctionnent, et c'est ainsi que je suis tombé amoureux de la programmation.",
-    "about.text2": "Aujourd'hui je travaille en Front-end et Back-end, en créant des projets allant de simples sites web à des systèmes complets. J'aime donner à tout un style moderne, fluide et personnel.",
-    "about.text3": "À l'avenir, je veux continuer à évoluer comme développeur Full Stack et participer à de grands projets où je pourrai apprendre encore plus et montrer qu'un code bien écrit peut aussi avoir du style.",
-    "projects.title": "Projets",
-    "contact.title": "Contact",
-    "contact.text": "Choisissez votre méthode de contact préférée.",
-    "settings.title": "Paramètres",
-    "settings.language": "Langue:",
-    "settings.color": "Couleur primaire:",
-    "settings.font": "Taille de police:"
+    "site": {
+        "title": "Biel Vereda | Portfolio"
+    },
+    "navbar": {
+        "home": "Accueil",
+        "about": "À propos",
+        "projects": "Projets",
+        "timeline": "Chronologie",
+        "resume": "CV",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Biel Vereda",
+        "subtitle": "Développeur Back-end et Front-end"
+    },
+    "about": {
+        "title": "À propos",
+        "description1": "Je suis Gabriel Vereda, développeur web passionné par la création de solutions modernes et fonctionnelles. Curieux de nature, je cherche toujours à comprendre comment les choses fonctionnent et à transformer les idées en code bien structuré.",
+        "description2": "Mon parcours a commencé par des projets personnels et freelances, évoluant vers des certifications et une formation technique en développement de systèmes. Aujourd'hui, je me concentre sur ma croissance en tant que Full Stack et sur ma contribution à des projets d'impact."
+    },
+    "projects": {
+        "title": "Projets",
+        "filters": {
+            "all": "Tous",
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "fullstack": "Full Stack"
+        },
+        "cards": {
+            "repo": "Voir le Répertoire"
+        },
+        "controls": {
+            "prev": "‹",
+            "next": "›"
+        }
+    },
+    "timeline": {
+        "title": "Mon Parcours",
+        "steps": {
+            "2024": "Certifications SENAI et Alura",
+            "2025": "Projets Freelance en HTML, CSS et JS",
+            "2026": "Diplôme Technique en Développement de Systèmes"
+        }
+    },
+    "resume": {
+        "title": "CV",
+        "name": "Gabriel Vereda",
+        "role": "Développeur Web Junior",
+        "description": "Expérience pratique en développement et maintenance de sites web, axée sur des solutions fonctionnelles, réactives et bien structurées. À la recherche de ma première opportunité formelle sur le marché.",
+        "download": "Télécharger le CV",
+        "formats": {
+            "pdf": "PDF",
+            "jpg": "JPG",
+            "png": "PNG"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "text": "Je serais ravi de discuter ! Choisissez la méthode de contact que vous préférez :",
+        "email": {
+            "title": "Email",
+            "button": "Envoyer un Email"
+        },
+        "linkedin": {
+            "title": "LinkedIn",
+            "button": "Voir mon profil"
+        },
+        "github": {
+            "title": "GitHub",
+            "button": "Accéder à GitHub"
+        }
+    },
+    "settings": {
+        "title": "Paramètres",
+        "language": "Langue",
+        "color": "Couleur Principale",
+        "font": "Taille de Police"
+    },
+    "footer": {
+        "rights": "© 2026 Biel Vereda | Conditions d’Utilisation"
+    }
 }

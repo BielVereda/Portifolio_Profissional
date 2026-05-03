@@ -1,0 +1,83 @@
+{
+    "site": {
+        "title": "Biel Vereda | Portfolio"
+    },
+    "navbar": {
+        "home": "Home",
+        "about": "Chi Sono",
+        "projects": "Progetti",
+        "timeline": "Cronologia",
+        "resume": "Curriculum",
+        "contact": "Contatto"
+    },
+    "hero": {
+        "title": "Biel Vereda",
+        "subtitle": "Sviluppatore Back-end e Front-end"
+    },
+    "about": {
+        "title": "Chi Sono",
+        "description1": "Sono Gabriel Vereda, sviluppatore web appassionato di creare soluzioni moderne e funzionali. Curioso per natura, cerco sempre di capire come funzionano le cose e trasformare le idee in codice ben strutturato.",
+        "description2": "Il mio percorso è iniziato con progetti personali e freelance, evolvendo in certificazioni e formazione tecnica nello sviluppo di sistemi. Oggi mi concentro sulla crescita come Full Stack e sul contributo a progetti di impatto."
+    },
+    "projects": {
+        "title": "Progetti",
+        "filters": {
+            "all": "Tutti",
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "fullstack": "Full Stack"
+        },
+        "cards": {
+            "repo": "Vedi Repository"
+        },
+        "controls": {
+            "prev": "‹",
+            "next": "›"
+        }
+    },
+    "timeline": {
+        "title": "Il Mio Percorso",
+        "steps": {
+            "2024": "Certificazioni SENAI e Alura",
+            "2025": "Progetti Freelance in HTML, CSS e JS",
+            "2026": "Diploma Tecnico in Sviluppo di Sistemi"
+        }
+    },
+    "resume": {
+        "title": "Curriculum",
+        "name": "Gabriel Vereda",
+        "role": "Sviluppatore Web Junior",
+        "description": "Esperienza pratica nello sviluppo e manutenzione di siti web, con focus su soluzioni funzionali, responsive e ben strutturate. In cerca della prima opportunità formale sul mercato.",
+        "download": "Scarica Curriculum",
+        "formats": {
+            "pdf": "PDF",
+            "jpg": "JPG",
+            "png": "PNG"
+        }
+    },
+    "contact": {
+        "title": "Contatto",
+        "text": "Sarò felice di parlare! Scegli il metodo di contatto che preferisci:",
+        "email": {
+            "title": "Email",
+            "button": "Invia Email"
+        },
+        "linkedin": {
+            "title": "LinkedIn",
+            "button": "Vedi il mio profilo"
+        },
+        "github": {
+            "title": "GitHub",
+            "button": "Accedi a GitHub"
+        }
+    },
+    "settings": {
+        "title": "Impostazioni",
+        "language": "Lingua",
+        "color": "Colore Primario",
+        "font": "Dimensione Font"
+    },
+    "footer": {
+        "rights": "© 2026 Biel Vereda | Termini di Utilizzo"
+    }
+}

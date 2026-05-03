@@ -1,0 +1,83 @@
+{
+    "site": {
+        "title": "Biel Vereda | Portfolio"
+    },
+    "navbar": {
+        "home": "Startseite",
+        "about": "Über mich",
+        "projects": "Projekte",
+        "timeline": "Zeitstrahl",
+        "resume": "Lebenslauf",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Biel Vereda",
+        "subtitle": "Back-end und Front-end Entwickler"
+    },
+    "about": {
+        "title": "Über mich",
+        "description1": "Ich bin Gabriel Vereda, ein Webentwickler, leidenschaftlich daran interessiert, moderne und funktionale Lösungen zu schaffen. Von Natur aus neugierig, versuche ich immer zu verstehen, wie Dinge funktionieren und Ideen in gut strukturierten Code umzuwandeln.",
+        "description2": "Meine Reise begann mit persönlichen und Freelance-Projekten, entwickelte sich zu Zertifizierungen und technischer Ausbildung in Systementwicklung. Heute konzentriere ich mich darauf, als Full Stack Entwickler zu wachsen und zu Projekten mit Wirkung beizutragen."
+    },
+    "projects": {
+        "title": "Projekte",
+        "filters": {
+            "all": "Alle",
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "fullstack": "Full Stack"
+        },
+        "cards": {
+            "repo": "Repository ansehen"
+        },
+        "controls": {
+            "prev": "‹",
+            "next": "›"
+        }
+    },
+    "timeline": {
+        "title": "Mein Werdegang",
+        "steps": {
+            "2024": "SENAI und Alura Zertifizierungen",
+            "2025": "Freelance Projekte in HTML, CSS und JS",
+            "2026": "Techniker in Systementwicklung"
+        }
+    },
+    "resume": {
+        "title": "Lebenslauf",
+        "name": "Gabriel Vereda",
+        "role": "Junior Webentwickler",
+        "description": "Praktische Erfahrung in der Entwicklung und Wartung von Websites, mit Fokus auf funktionale, responsive und gut strukturierte Lösungen. Suche nach der ersten formalen Gelegenheit auf dem Markt.",
+        "download": "Lebenslauf herunterladen",
+        "formats": {
+            "pdf": "PDF",
+            "jpg": "JPG",
+            "png": "PNG"
+        }
+    },
+    "contact": {
+        "title": "Kontakt",
+        "text": "Ich freue mich auf ein Gespräch! Wählen Sie die bevorzugte Kontaktmethode:",
+        "email": {
+            "title": "E-Mail",
+            "button": "E-Mail senden"
+        },
+        "linkedin": {
+            "title": "LinkedIn",
+            "button": "Mein Profil ansehen"
+        },
+        "github": {
+            "title": "GitHub",
+            "button": "GitHub öffnen"
+        }
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "language": "Sprache",
+        "color": "Primärfarbe",
+        "font": "Schriftgröße"
+    },
+    "footer": {
+        "rights": "© 2026 Biel Vereda | Nutzungsbedingungen"
+    }
+}

@@ -1,20 +1,83 @@
 {
-    "site.title": "Biel Vereda | Portafolio",
-    "navbar.home": "Inicio",
-    "navbar.about": "Sobre mí",
-    "navbar.projects": "Proyectos",
-    "navbar.contact": "Contacto",
-    "hero.title": "Biel Vereda",
-    "hero.subtitle": "Desarrollador Back-end y Front-end",
-    "about.title": "Sobre mí",
-    "about.text1": "Hola, soy Biel Vereda — el tipo que pasa más tiempo entre líneas de código que lejos de la pantalla. Curioso por naturaleza, siempre me gustó entender cómo funcionan las cosas, y así me enamoré de la programación.",
-    "about.text2": "Hoy trabajo con Front-end y Back-end, creando proyectos que van desde sitios simples hasta sistemas completos. Me gusta darles un estilo moderno, fluido y personal.",
-    "about.text3": "En el futuro quiero seguir creciendo como Full Stack y participar en proyectos grandes, donde pueda aprender aún más y demostrar que el código bien hecho también puede tener estilo.",
-    "projects.title": "Proyectos",
-    "contact.title": "Contacto",
-    "contact.text": "Elige tu método de contacto preferido.",
-    "settings.title": "Configuraciones",
-    "settings.language": "Idioma:",
-    "settings.color": "Color primario:",
-    "settings.font": "Tamaño de fuente:"
+    "site": {
+        "title": "Biel Vereda | Portafolio"
+    },
+    "navbar": {
+        "home": "Inicio",
+        "about": "Sobre Mí",
+        "projects": "Proyectos",
+        "timeline": "Cronología",
+        "resume": "Currículum",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title": "Biel Vereda",
+        "subtitle": "Desarrollador Back-end y Front-end"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "description1": "Soy Gabriel Vereda, desarrollador web apasionado por crear soluciones modernas y funcionales. Curioso por naturaleza, siempre busco entender cómo funcionan las cosas y transformar ideas en código bien estructurado.",
+        "description2": "Mi trayectoria comenzó con proyectos personales y freelance, evolucionando hacia certificaciones y formación técnica en Desarrollo de Sistemas. Hoy me enfoco en crecer como Full Stack y contribuir en proyectos de impacto."
+    },
+    "projects": {
+        "title": "Proyectos",
+        "filters": {
+            "all": "Todos",
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "fullstack": "Full Stack"
+        },
+        "cards": {
+            "repo": "Ver Repositorio"
+        },
+        "controls": {
+            "prev": "‹",
+            "next": "›"
+        }
+    },
+    "timeline": {
+        "title": "Mi Trayectoria",
+        "steps": {
+            "2024": "Certificaciones SENAI y Alura",
+            "2025": "Proyectos freelance en HTML, CSS y JS",
+            "2026": "Técnico en Desarrollo de Sistemas"
+        }
+    },
+    "resume": {
+        "title": "Currículum",
+        "name": "Gabriel Vereda",
+        "role": "Desarrollador Web Junior",
+        "description": "Experiencia práctica en desarrollo y mantenimiento de sitios web, con enfoque en soluciones funcionales, responsivas y bien estructuradas. Buscando primera oportunidad formal en el mercado.",
+        "download": "Descargar Currículum",
+        "formats": {
+            "pdf": "PDF",
+            "jpg": "JPG",
+            "png": "PNG"
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "text": "¡Encantado de conversar! Elige la forma de contacto que prefieras:",
+        "email": {
+            "title": "Correo",
+            "button": "Enviar Correo"
+        },
+        "linkedin": {
+            "title": "LinkedIn",
+            "button": "Ver mi perfil"
+        },
+        "github": {
+            "title": "GitHub",
+            "button": "Acceder a GitHub"
+        }
+    },
+    "settings": {
+        "title": "Configuraciones",
+        "language": "Idioma",
+        "color": "Color Primario",
+        "font": "Tamaño de Fuente"
+    },
+    "footer": {
+        "rights": "© 2026 Biel Vereda | Términos de Uso"
+    }
 }

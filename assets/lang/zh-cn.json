@@ -1,0 +1,83 @@
+{
+    "site": {
+        "title": "比埃尔·维雷达 | 作品集"
+    },
+    "navbar": {
+        "home": "首页",
+        "about": "关于我",
+        "projects": "项目",
+        "timeline": "时间线",
+        "resume": "简历",
+        "contact": "联系"
+    },
+    "hero": {
+        "title": "比埃尔·维雷达",
+        "subtitle": "后端与前端开发者"
+    },
+    "about": {
+        "title": "关于我",
+        "description1": "我是加布里埃尔·维雷达，一名热衷于创造现代和功能性解决方案的网页开发者。天生好奇，我总是努力理解事物的运作方式，并将想法转化为结构良好的代码。",
+        "description2": "我的旅程始于个人和自由职业项目，逐渐发展为认证和系统开发的技术培训。如今，我专注于成长为全栈开发者并为有影响力的项目做出贡献。"
+    },
+    "projects": {
+        "title": "项目",
+        "filters": {
+            "all": "全部",
+            "frontend": "前端",
+            "backend": "后端",
+            "fullstack": "全栈"
+        },
+        "cards": {
+            "repo": "查看仓库"
+        },
+        "controls": {
+            "prev": "‹",
+            "next": "›"
+        }
+    },
+    "timeline": {
+        "title": "我的旅程",
+        "steps": {
+            "2024": "SENAI 和 Alura 认证",
+            "2025": "HTML、CSS 和 JS 自由职业项目",
+            "2026": "系统开发技术学位"
+        }
+    },
+    "resume": {
+        "title": "简历",
+        "name": "加布里埃尔·维雷达",
+        "role": "初级网页开发者",
+        "description": "在网站开发和维护方面有实践经验，专注于功能性、响应式和结构良好的解决方案。正在寻找市场上的第一个正式机会。",
+        "download": "下载简历",
+        "formats": {
+            "pdf": "PDF",
+            "jpg": "JPG",
+            "png": "PNG"
+        }
+    },
+    "contact": {
+        "title": "联系",
+        "text": "很高兴与您交流！请选择您喜欢的联系方式：",
+        "email": {
+            "title": "电子邮件",
+            "button": "发送邮件"
+        },
+        "linkedin": {
+            "title": "LinkedIn",
+            "button": "查看我的资料"
+        },
+        "github": {
+            "title": "GitHub",
+            "button": "访问 GitHub"
+        }
+    },
+    "settings": {
+        "title": "设置",
+        "language": "语言",
+        "color": "主色",
+        "font": "字体大小"
+    },
+    "footer": {
+        "rights": "© 2026 比埃尔·维雷达 | 使用条款"
+    }
+}
