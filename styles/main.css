@@ -1,3 +1,4 @@
+/* Variáveis CSS */
 :root {
     --primary-color: #00ffff;
     --secondary-color: #111;
@@ -5,6 +6,7 @@
     --font-size: 16px;
 }
 
+/* Reset */
 * {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -15,9 +17,19 @@
     box-sizing: border-box;
 }
 
+section {
+    min-height: 100vh;
+    padding: 2rem 2rem;
+    scroll-margin-top: 150px;
+}
+
 body {
     height: 100vh;
     background: #000;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -35,7 +47,78 @@ body {
     z-index: 2000;
 }
 
-/* Botão de Configuração */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    position: relative;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+/* === Estado ativo === */
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+/* === Seta fixa no ativo === */
+.nav-links a.active::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* === Se o ativo estiver com a classe hide-arrow, a seta some === */
+.nav-links a.active.hide-arrow::before {
+    content: "";
+}
+
+/* === Hover em qualquer item: seta + underline piscando === */
+.nav-links a:hover::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.nav-links a:hover::after {
+    content: "_";
+    position: absolute;
+    right: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    animation: blink 1.5s infinite;
+}
+
+/* === Animação de piscar === */
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+/* === Botão de Configuração === */
 .config-btn {
     position: fixed;
     cursor: pointer;
@@ -43,7 +126,7 @@ body {
     top: 15px;
     right: 1%;
     z-index: 3001;
-    transform: translateZ(100px)
+    transform: translateZ(100px);
 }
 
 .config-btn::before {
@@ -69,26 +152,6 @@ body {
 .config-btn img {
     width: 40px;
     height: 40px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--primary-color);
 }
 
 /* Hero */
@@ -125,6 +188,7 @@ body {
 }
 
 .about h2 {
+    font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     text-shadow: 0 0 6px var(--primary-color);
@@ -144,6 +208,7 @@ body {
 }
 
 .projects h2 {
+    font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     text-shadow: 0 0 6px var(--primary-color);
@@ -169,6 +234,7 @@ body {
 }
 
 .contact h2 {
+    font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     text-shadow: 0 0 6px var(--primary-color);
@@ -225,8 +291,10 @@ body {
     gap: 1em;
 }
 
-/* Blocos pretos atrás dos textos */
-.about p, .projects p, .contact p {
+/* === Blocos pretos atrás dos textos === */
+.about p,
+.projects p,
+.contact p {
     background: rgba(0, 0, 0, 0.8);
     padding: 1rem;
     border-radius: 8px;
@@ -287,8 +355,44 @@ footer {
     text-align: center;
     padding: 1rem;
     border-top: 2px solid var(--primary-color);
+    background: var(--secondary-color);
     margin-top: 4rem;
     color: var(--text-color);
+    opacity: 0.9;
+    position: relative;
+    z-index: 10;
+}
+
+footer>p {
+    opacity: 1;
+    margin: 0;
+}
+
+footer .terms-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 20;
+}
+
+footer .terms-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+footer .terms-link:hover::after {
+    transform: scaleX(1);
 }
 
 /* Settings Panel */
@@ -307,7 +411,6 @@ footer {
     transform: translateX(100%);
 }
 
-/* quando ativo */
 .settings-panel.active {
     transform: translateX(0);
 }
@@ -326,7 +429,9 @@ footer {
     color: var(--text-color);
 }
 
-.settings-panel select, .settings-panel input[type="color"], .settings-panel input[type="range"] {
+.settings-panel select,
+.settings-panel input[type="color"],
+.settings-panel input[type="range"] {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid var(--primary-color);
@@ -379,14 +484,639 @@ footer {
     box-shadow: 0 0 12px var(--primary-color);
 }
 
-/* Canvas Matrix */
+/* Matrix Background*/
 #matrix {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0d0d0d;
+    background: var(--primary-color);
+    /* usa a variável */
     z-index: -9999;
     pointer-events: none;
+    transition: background 0.5s ease;
+    /* transição suave */
+}
+
+/* Projects - Filtro */
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter button {
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.filter button:hover {
+    box-shadow: 0 0 12px var(--primary-color);
+    color: var(--primary-color);
+}
+
+.filter button.active {
+    background: var(--primary-color);
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 0 12px var(--primary-color);
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 1rem auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* garante que os itens não fiquem cortados */
+    padding: 0 2em; /* espaço interno em vez de margin nos cards */
+    box-sizing: border-box;
+}
+
+/* Cards */
+.project-card {
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 1rem;
+    min-width: 280px;
+    text-align: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    margin: 0 1em; /* margem menor, não corta no final */
+}
+
+/* Imagens padronizadas */
+.project-card img {
+    width: 400px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 2px solid var(--primary-color);
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.project-card .btn {
+    background: var(--primary-color);
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card .btn:hover {
+    box-shadow: 0 0 12px var(--primary-color);
+}
+
+/* Botões do carrossel */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+.carousel-btn:hover {
+    box-shadow: 0 0 12px var(--primary-color);
+}
+
+.carousel-btn.prev {
+    left: 0.5rem;
+}
+
+.carousel-btn.next {
+    right: 0.5rem;
+}
+
+/* Timeline estilo gráfico */
+.timeline {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 900px;
+    color: var(--text-color);
+}
+
+.timeline h2 {
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background: var(--primary-color);
+    opacity: 0.4;
+    transition: width 2s ease;
+}
+
+.timeline.visible .progress-bar::before {
+    width: 100%;
+}
+
+.milestone {
+    position: relative;
+    text-align: center;
+    flex: 1;
+}
+
+.milestone .year {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.milestone p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* === Efeito de destaque === */
+.milestone .year:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+/* Resume */
+.resume {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.resume h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 6px var(--primary-color);
+}
+
+.resume-content {
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+}
+
+.resume-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.resume-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.resume-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Dropdown */
+/* === Wrapper para o select === */
+.dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+}
+
+/* === Select estilizado === */
+.dropdown-select {
+    width: 100%;
+    background-color: #000;
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1.5rem 0.5rem 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 6px;
+}
+
+/* === Opções === */
+.dropdown-option {
+    background-color: #000;
+    color: var(--text-color);
+}
+
+.dropdown-option:checked,
+.dropdown-option:focus,
+.dropdown-option:active {
+    background-color: #000;
+    color: var(--primary-color);
+}
+
+/* === Seta personalizada === */
+.dropdown-wrapper::after {
+    content: "▼";
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+}
+
+/* === Botão do currículo === */
+.resume-content .btn {
+    background: var(--primary-color);
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: box-shadow 0.3s ease;
+}
+
+.resume-content .btn:hover {
+    box-shadow: 0 0 12px var(--primary-color);
+}
+
+/* ============================= */
+/* Responsividade - @media queries */
+/* ============================= */
+
+/* Smartphones pequenos (até 480px) */
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project-card {
+        min-width: 240px;
+        margin: 0 1em;
+    }
+
+    .project-card img {
+        height: 140px;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+
+    .settings-panel {
+        width: 100%;
+    }
+}
+
+/* Smartphones médios e tablets pequenos (481px a 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hero {
+        margin-top: 6rem;
+    }
+
+    .projects,
+    .about,
+    .resume,
+    .contact {
+        padding: 1rem;
+    }
+
+    .project-card {
+        min-width: 260px;
+        margin: 0 1em;
+    }
+
+    .project-card img {
+        height: 160px;
+    }
+
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tablets grandes e notebooks pequenos (769px a 1024px) */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 1.2rem;
+    }
+
+    .carousel {
+        max-width: 90%;
+    }
+
+    .project-card {
+        min-width: 280px;
+    }
+
+    .contact-grid {
+        gap: 1.5rem;
+    }
+}
+
+/* Monitores grandes (acima de 1440px) */
+@media (min-width: 1440px) {
+
+    .projects,
+    .about,
+    .resume,
+    .contact,
+    .timeline {
+        max-width: 1200px;
+    }
+
+    .project-card img {
+        height: 220px;
+    }
+}
+
+/* ============================= */
+/* Compatibilidade e Fallbacks   */
+/* ============================= */
+
+/* Scroll suave - fallback */
+html {
+    scroll-behavior: smooth;
+}
+
+@supports not (scroll-behavior: smooth) {
+    html {
+        /* navegadores antigos não suportam scroll-behavior */
+        /* aqui poderia entrar um JS polyfill se necessário */
+    }
+}
+
+/* Aparência customizada de inputs e selects */
+.dropdown-select,
+.settings-panel select,
+.settings-panel input[type="color"],
+.settings-panel input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Compatibilidade para slider (range input) */
+#fontSize::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+#fontSize::-moz-range-thumb {
+    -moz-appearance: none;
+}
+
+#fontSize::-ms-thumb {
+    appearance: none;
+}
+
+/* Fallback para mask-image em navegadores sem suporte */
+.icon-email,
+.icon-linkedin,
+.icon-github {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@supports not (mask-image: url("")) {
+    .icon-email {
+        background-image: url('./../assets/icons/email.png');
+    }
+
+    .icon-linkedin {
+        background-image: url('./../assets/icons/linkedin.png');
+    }
+
+    .icon-github {
+        background-image: url('./../assets/icons/github.png');
+    }
+}
+
+/* Compatibilidade para blur em config-btn */
+.config-btn::before {
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+}
+
+/* Compatibilidade para animações */
+@-webkit-keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+/* Easter-Eggs */
+.secret-code-wrapper {
+    margin-top: 2rem;
+}
+
+.secret-code-wrapper label {
+    color: var(--text-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.secret-code-wrapper input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background: #000;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Arco-íris */
+:root.rainbow-mode {
+    --primary-color: red;
+    animation: rainbow 20s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        --primary-color: red;
+    }
+
+    20% {
+        --primary-color: rgb(255, 183, 0);
+    }
+
+    40% {
+        --primary-color: yellow;
+    }
+
+    60% {
+        --primary-color: rgb(0, 255, 0);
+    }
+
+    80% {
+        --primary-color: rgb(0, 195, 255);
+    }
+
+    100% {
+        --primary-color: violet;
+    }
+}
+
+:root.rainbow-mode #matrix {
+    background: linear-gradient(270deg, red, rgb(255, 183, 0), yellow, rgb(0, 255, 0), rgb(0, 195, 255), indigo, violet);
+    background-size: 1400% 1400%;
+    animation: rainbowBG 15s ease infinite;
+}
+
+@keyframes rainbowBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Matrix */
+.matrix-mode {
+    background: #000 url('./assets/matrix-bg.gif') repeat;
+    color: #0f0;
+}
+
+/* Retro */
+.retro-mode {
+    font-family: "Press Start 2P", monospace;
+    image-rendering: pixelated;
+}
+
+/* DarkSide */
+.darkside-mode {
+    --primary-color: #ff0000;
+    background: #000;
+}
+
+/* Glitch */
+.glitch-mode {
+    animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: skew(0deg);
+    }
+
+    25% {
+        transform: skew(5deg);
+    }
+
+    50% {
+        transform: skew(-5deg);
+    }
+
+    75% {
+        transform: skew(3deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+/* Invert */
+.invert-mode {
+    filter: invert(1);
+}
+
+/* Neon */
+.neon-mode {
+    text-shadow: 0 0 5px var(--primary-color),
+        0 0 10px var(--primary-color),
+        0 0 20px var(--primary-color);
 }
