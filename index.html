@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="site.title">Biel Vereda | Portfolio</title>
   <link rel="stylesheet" href="./styles/main.css" />
+
+  <link rel="icon" type="image/png" href="./assets/images/logo.png" />
 </head>
 
 <body>
@@ -15,13 +17,14 @@
   <header class="navbar">
     <nav>
       <ul class="nav-links">
-        <li><a href="#home" data-i18n="navbar.home"></a></li>
-        <li><a href="#about" data-i18n="navbar.about"></a></li>
-        <li><a href="#projects" data-i18n="navbar.projects"></a></li>
-        <li><a href="#contact" data-i18n="navbar.contact"></a></li>
+        <li><a href="#home" class="active" data-i18n="navbar.home">Início</a></li>
+        <li><a href="#about" data-i18n="navbar.about">Sobre Mim</a></li>
+        <li><a href="#projects" data-i18n="navbar.projects">Projetos</a></li>
+        <li><a href="#timeline" data-i18n="navbar.timeline">Linha do Tempo</a></li>
+        <li><a href="#resume" data-i18n="navbar.resume">Currículo</a></li>
+        <li><a href="#contact" data-i18n="navbar.contact">Contato</a></li>
       </ul>
     </nav>
-    
     <button id="configBtn" class="config-btn">
       <img src="./assets/icons/settings.png" alt="Settings" />
     </button>
@@ -37,102 +40,272 @@
   <!-- About -->
   <section id="about" class="about">
     <h2 data-i18n="about.title">Sobre Mim</h2>
-
-    <p data-i18n="about.text1">
-      Fala aí! Sou o <strong>Biel Vereda</strong> — o cara que passa mais
-      tempo entre linhas de código do que longe da tela. Curioso por
-      natureza, sempre gostei de entender como as coisas funcionam, e foi
-      assim que acabei me apaixonando pela programação.
+    <p data-i18n="about.description1">
+      Sou <strong>Gabriel Vereda</strong>, desenvolvedor web apaixonado por criar soluções
+      modernas e funcionais. Curioso por natureza, sempre busco entender como as coisas
+      funcionam e transformar ideias em código bem estruturado.
     </p>
-
-    <p data-i18n="about.text2">
-      Hoje eu trabalho com <strong>Front-end</strong> e
-      <strong>Back-end</strong>, criando projetos que vão desde sites
-      simples até sistemas completos. Gosto de deixar tudo com uma pegada
-      moderna, fluida e com um toque pessoal.
-    </p>
-
-    <p data-i18n="about.text3">
-      No futuro, quero continuar evoluindo como
-      <strong>Full Stack</strong> e entrar em projetos grandes, onde eu
-      possa aprender ainda mais e mostrar que código bem feito também pode
-      ter estilo.
+    <p data-i18n="about.description2">
+      Minha jornada começou com projetos pessoais e freelances, evoluindo para certificações
+      e formação técnica em Desenvolvimento de Sistemas. Hoje, sigo focado em crescer como
+      Full Stack e contribuir em projetos de impacto.
     </p>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects com Carrossel -->
   <section id="projects" class="projects">
     <h2 data-i18n="projects.title">Projetos</h2>
-    <div class="project-list">
-      <!-- Project cards -->
+
+    <!-- Filtros -->
+    <div class="filter">
+      <button data-i18n="projects.filters.all" data-filter="all" class="active">Todos</button>
+      <button data-i18n="projects.filters.frontend" data-filter="frontend">Front-end</button>
+      <button data-i18n="projects.filters.backend" data-filter="backend">Back-end</button>
+      <button data-i18n="projects.filters.fullstack" data-filter="fullstack">Full Stack</button>
+    </div>
+
+    <!-- Carrossel -->
+    <div class="carousel">
+      <div class="carousel-track">
+
+        <!-- Cards de Projetos -->
+        <!-- Front-End -->
+        <div class="project-card" data-category="frontend">
+          <img src="./assets/images/projects/game-station.png" alt="Game Station" />
+          <h3 data-i18n="projects.cards.gamestation">Game Station</h3>
+          <a href="https://github.com/BielVereda/Game_Station.git" target="_blank" rel="noopener noreferrer" class="btn"
+            data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <img src="./assets/images/projects/brq-rebrainding.png" alt="BRQ Rebrainding" />
+          <h3 data-i18n="projects.cards.brqrebrainding">BRQ Rebrainding</h3>
+          <a href="https://github.com/BielVereda/BRQ_Rebrainding.git" target="_blank" rel="noopener noreferrer"
+            class="btn" data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <img src="./assets/images/projects/motoristas_unesp.png" alt="Motoristas UNESP" />
+          <h3 data-i18n="projects.cards.motoristasunesp">Motoristas UNESP</h3>
+          <a href="https://github.com/BielVereda/Motoristas_Unesp.git" target="_blank" rel="noopener noreferrer"
+            class="btn" data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <img src="./assets/images/projects/safe-speak.png" alt="Safe Speak" />
+          <h3 data-i18n="projects.cards.safespeak">Safe Speak</h3>
+          <a href="https://github.com/BielVereda/Site_Denuncia.git" target="_blank" rel="noopener noreferrer"
+            class="btn" data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <img src="./assets/images/projects/datacenter-senai.png" alt="Data Center SENAI" />
+          <h3 data-i18n="projects.cards.datacentersenai">Data Center SENAI</h3>
+          <a href="https://github.com/BielVereda/DataCenter_SENAI.git" target="_blank" rel="noopener noreferrer"
+            class="btn" data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <img src="./assets/images/projects/midnight-club.png" alt="Midnight Club" />
+          <h3 data-i18n="projects.cards.midnightclub">Midnight Club</h3>
+          <a href="https://github.com/BielVereda/midnight_club.git" target="_blank" rel="noopener noreferrer"
+            class="btn" data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <!-- Back-End -->
+        <div class="project-card" data-category="backend">
+          <img src="./assets/images/projects/ecommerce-api.png" alt="E-commerce API + Security" />
+          <h3 data-i18n="projects.cards.ecommerceapisecurity">E-commerce API + Security</h3>
+          <a href="https://github.com/BielVereda/E-Commerce_Security.git" target="_blank" class="btn"
+            data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <img src="./assets/images/projects/legend.png" alt="Legend Py" />
+          <h3 data-i18n="projects.cards.legend">Legend Py</h3>
+          <a href="https://github.com/BielVereda/Legend.git" target="_blank" class="btn"
+            data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <img src="./assets/images/projects/spaceship-game.png" alt="Spaceship Game" />
+          <h3 data-i18n="projects.cards.spaceship">Spaceship Game</h3>
+          <a href="https://github.com/BielVereda/Spaceship_Game.git" target="_blank" class="btn"
+            data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <div class="project-card" data-category="backend">
+          <img src="./assets/images/projects/bibioteca-api.png" alt="Biblioteca API" />
+          <h3 data-i18n="projects.cards.bibiotecaapi">Biblioteca API</h3>
+          <a href="https://github.com/BielVereda/Biblioteca_BeckEnd.git" target="_blank" class="btn"
+            data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+
+        <!-- Full Stack -->
+        <div class="project-card" data-category="fullstack">
+          <img src="./assets/images/projects/naruto-api.png" alt="Naruto API" />
+          <h3 data-i18n="projects.cards.narutoapi">Naruto API</h3>
+          <a href="https://github.com/BielVereda/Consuming_API_Naruto.git" target="_blank" class="btn"
+            data-i18n="projects.cards.repo">
+            Ver Repositório
+          </a>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-btn prev" data-i18n="projects.controls.prev">‹</button>
+      <button class="carousel-btn next" data-i18n="projects.controls.next">›</button>
+    </div>
+  </section>
+
+  <!-- Timeline (gráfico) -->
+  <!-- Timeline (gráfico) -->
+  <section id="timeline" class="timeline">
+    <h2 data-i18n="timeline.title">Minha Jornada</h2>
+    <div class="progress-bar">
+      <div class="milestone">
+        <span class="year">2024</span>
+        <p data-i18n="timeline.steps.2024">Certificações SENAI e Alura</p>
+      </div>
+      <div class="milestone">
+        <span class="year">2025</span>
+        <p data-i18n="timeline.steps.2025">Projetos Freelance em HTML, CSS e JS</p>
+      </div>
+      <div class="milestone">
+        <span class="year">2026</span>
+        <p data-i18n="timeline.steps.2026">Técnico em Desenvolvimento de Sistemas</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Resume -->
+  <section id="resume" class="resume">
+    <h2 data-i18n="resume.title">Currículo</h2>
+    <div class="resume-content">
+      <h3 data-i18n="resume.name">Gabriel Vereda</h3>
+      <p data-i18n="resume.role">Desenvolvedor Web Júnior</p>
+      <p data-i18n="resume.description">
+        Experiência prática em desenvolvimento e manutenção de sites, com foco em
+        soluções funcionais, responsivas e bem estruturadas. Buscando primeira
+        oportunidade formal no mercado.
+      </p>
+
+      <div class="resume-actions">
+        <a id="resumeDownload" href="./assets/docs/Curriculum_BielVereda.pdf" target="_blank" class="btn"
+          data-i18n="resume.download">
+          Baixar Currículo
+        </a>
+
+        <div class="dropdown-wrapper">
+          <select id="resumeFormat" class="dropdown-select">
+            <option value="pdf" class="dropdown-option" selected>PDF</option>
+            <option value="jpg" class="dropdown-option">JPG</option>
+            <option value="png" class="dropdown-option">PNG</option>
+          </select>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <!-- ===== CONTATO ===== -->
   <section id="contact" class="contact">
     <div class="container text-center">
       <h2 data-i18n="contact.title">Entre em Contato</h2>
       <p data-i18n="contact.text">
         Ficarei feliz em conversar! Escolha a forma de contato que preferir:
       </p>
-
       <div class="cards-group">
         <div class="contact-card">
           <div class="contact-icon icon-email"></div>
-          <h5>Email</h5>
-          <a href="mailto:gabrielsantosvereda@gmail.com" class="btn">Enviar Email</a>
+          <h5 data-i18n="contact.email.title">Email</h5>
+          <a href="mailto:gabrielsantosvereda@gmail.com" class="btn" data-i18n="contact.email.button">Enviar Email</a>
         </div>
-
         <div class="contact-card">
           <div class="contact-icon icon-linkedin"></div>
-          <h5>Linkedin</h5>
-          <a href="https://www.linkedin.com/in/gabriel-vereda" target="_blank" rel="noopener noreferrer" class="btn">
+          <h5 data-i18n="contact.linkedin.title">Linkedin</h5>
+          <a href="https://www.linkedin.com/in/gabriel-vereda" target="_blank" rel="noopener noreferrer" class="btn"
+            data-i18n="contact.linkedin.button">
             Veja meu perfil
           </a>
         </div>
-
         <div class="contact-card">
           <div class="contact-icon icon-github"></div>
-          <h5>GitHub</h5>
-          <a href="https://github.com/BielVereda" target="_blank" class="btn">Acessar GitHub</a>
+          <h5 data-i18n="contact.github.title">GitHub</h5>
+          <a href="https://github.com/BielVereda" target="_blank" class="btn" data-i18n="contact.github.button">Acessar
+            GitHub</a>
         </div>
       </div>
-
-    </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Biel Vereda</p>
+    <p>
+      © 2026 Biel Vereda |
+      <a href="terms_of_use.html" class="terms-link">Termos de Uso</a>
+    </p>
   </footer>
 
   <!-- Settings Panel -->
   <div class="settings-panel">
-    <h3 data-i18n="settings.title">Settings</h3>
-    <label for="langSwitcher" data-i18n="settings.language">Language:</label>
-    <select id="langSwitcher">
+    <h3 data-i18n="settings.title">Configurações</h3>
+    <label for="langSwitcher" data-i18n="settings.language">Idioma:</label>
+    <select id="langSwitcher" class="dropdown-select">
       <option value="pt-br">Português (Brasil)</option>
       <option value="pt-pt">Português (Portugal)</option>
       <option value="en">English</option>
       <option value="es">Español</option>
       <option value="fr">Français</option>
-      <option value="zh">中文</option>
+      <option value="de">Deutsch</option>
+      <option value="it">Italiano</option>
+      <option value="zh-cn">中文 (简体)</option>
+      <option value="ja">日本語</option>
+      <option value="ar">العربية</option>
+      <option value="ru">Русский</option>
+      <option value="hi">हिन्दी</option>
     </select>
 
-    <label for="colorPicker" data-i18n="settings.color">Primary Color:</label>
+    <label for="colorPicker" data-i18n="settings.color">Cor Primária:</label>
     <input type="color" id="colorPicker" />
 
-    <label for="fontSize" data-i18n="settings.font">Font Size:</label>
+    <label for="fontSize" data-i18n="settings.font">Tamanho da Fonte:</label>
     <input type="range" id="fontSize" min="12" max="24" />
+
+    <div class="secret-code-wrapper">
+      <label for="secretCode">Código Secreto</label>
+      <input type="text" id="secretCode" placeholder="Digite aqui..." />
+    </div>
+
   </div>
 
+  <!-- Scripts -->
   <script src="./scripts/menu.js"></script>
   <script src="./scripts/theme.js"></script>
   <script src="./scripts/animations.js"></script>
-  <script src="./scripts/matrix.js"></script>
-  <script src="./scripts/tese.js"></script>
+  <script src="./scripts/active.js"></script>
+  <script src="./scripts/secrets.js"></script>
 </body>
 
 </html>
